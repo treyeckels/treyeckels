@@ -91,6 +91,37 @@ body {
   overflow: hidden;
 }
 
+.slider-caption-container {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.slider-caption-container,
+.slider-caption-container:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+}
+
+.slider-caption-container:after {
+  content: '';
+  background-color: #000000;
+  opacity: .7;
+}
+
+.slider-caption-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #b0a18e;
+  z-index: 1;
+  margin-top: 0;
+}
+
 .label-list {
   margin: 0;
   padding: 0;
