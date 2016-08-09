@@ -83,8 +83,8 @@ body {
 }
 
 .content-portfolio .flexslider {
-  background-color: #b0a18e;
-  border-color: #b0a18e;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .content-portfolio .slides {

@@ -1,6 +1,9 @@
-angular.module('treyeckels')
-  .controller('PortfolioCtrl', function ($scope) {
-    $scope.slides = [
+angular
+  .module('treyeckels')
+  .component('app', {
+    templateUrl: 'components/app/app.template.html',
+    controller: function AppCtrl() {
+      this.slides = [
         'images/fruitwater.jpg',
         'images/boston-globe.jpg',
         'images/mine-for-nine.jpg',
@@ -11,5 +14,6 @@ angular.module('treyeckels')
         'images/usps.jpg',
         'images/washington-post.jpg',
         'images/linkedin.jpg'
-    ];
+      ];
+    }
   });
