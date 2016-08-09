@@ -3,11 +3,11 @@
   <h2 class="content-heading">Portfolio</h2>
   <div class="container">
     <div class="row">
-      <flex-slider flex-slide="slide in $ctrl.slides">
+      <flex-slider flex-slide="slide in $ctrl.slides track by $index">
         <li>
-          <img ng-src="{{slide}}" alt="">
+          <img ng-src="{{slide.src}}" alt="screenshot for {{slide.caption}}">
           <div class="slider-caption-container">
-            <h3 class="slider-caption-text">text</h3>
+            <h3 class="slider-caption-text">{{slide.caption}}</h3>
           </div>
         </li>
       </flex-slider>
